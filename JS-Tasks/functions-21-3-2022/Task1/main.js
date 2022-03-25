@@ -46,13 +46,13 @@ Create an array represents your:
 answer is: 
 
 */
-  var favorite_food = ["burger","chiken","meat","french fries","lentil"]
-  var favorite_sport = ["basketball","football","tenes"]
-  var favorite_movie = ["breaking_bad","mars","preson_break","game_of_thrones"]
+var favorite_food = ["burger", "chiken", "meat", "french fries", "lentil"]
+var favorite_sport = ["basketball", "football", "tenes"]
+var favorite_movie = ["breaking_bad", "mars", "preson_break", "game_of_thrones"]
 
-  console.log(favorite_food);
-  console.log(favorite_sport);
-  console.log(favorite_movie);
+console.log(favorite_food);
+console.log(favorite_sport);
+console.log(favorite_movie);
 
 
 /*
@@ -68,14 +68,15 @@ Ex: firstOfArray(["t","u","g","x"]) => "t"
 answer is:
 
 */
-function firstOfArray(ary){
+function firstOfArray(ary) {
 
      let num = ary[0]
 
-     return num 
+     return num
 
 }
-console.log(firstOfArray([1,4,5]))
+console.log(firstOfArray([1, 4, 5]))
+
 
 
 
@@ -91,11 +92,11 @@ Ex: lastOfArray(["t","u","g","x"]) => "x"
 answer is :
 
 */
-function lastOfArray(lol){
-    let charr = lol[3] 
-    return charr
+function lastOfArray(lol) {
+     let charr = lol[lol.length - 1]
+     return charr
 }
-let aryy = ["t","u","g","x"]
+let aryy = ["t", "u", "g", "x"]
 console.log(lastOfArray(aryy))
 
 /*
@@ -107,12 +108,12 @@ var array = [0,5,7,9]
 
 answer is :
 */
-var ryy =[0,5,7,9]
+var ryy = [0, 5, 7, 9]
 
 ryy.shift();
 ryy.shift();
 ryy.shift();
-ryy.unshift(1,3,4,6,8)
+ryy.unshift(1, 3, 4, 6, 8)
 ryy.push(10)
 console.log(ryy)
 
@@ -127,12 +128,12 @@ var array2 = [5,9,-7,3.5]
 answer is :
 */
 
-var array2 = [5,9,-7,3.5]
- array2.shift(); // delete first element in array 
- array2.pop(); // delete last element in array 
- array2.unshift(6); // add element in the start of array 
- array2.push(15); // add element in the end of array 
- console.log(array2);
+var array2 = [5, 9, -7, 3.5]
+array2.shift(); // delete first element in array 
+array2.pop(); // delete last element in array 
+array2.unshift(6); // add element in the start of array 
+array2.push(15); // add element in the end of array 
+console.log(array2);
 
 
 
@@ -148,6 +149,21 @@ Ex: middleOfArray([1,4,5]) => 4
 Ex: middleOfArray(["t","u","g","x"]) =>"u and g"
 */
 
+function middleOfArray (arrayFun){
+     let i;
+      if (arrayFun.length % 2 != 1){
+          i = arrayFun.slice((arrayFun.length) / 2 - 1 , (arrayFun.length ) / 2 + 1)
+      }else {
+          i = arrayFun.slice((arrayFun.length) / 2 , (arrayFun.length ) / 2 + 1)
+      }
+      return i
+  }
+  var arraytest = [1,2,3,4,5,6,7,8,9,10]
+  document.write(middleOfArray(arraytest))
+  document.write(`<br>`)
+
+
+
 
 /*
 9
@@ -160,7 +176,16 @@ animals; => ['zebra', 'elephant']
 
 var nums= [1,2,3,8,9]
 nums => [5,-22,3.5,44,98,44]
+
+answer is : 
 */
+let animals = ['cat', 'ele', 'bird']
+
+animals[0] = "zebra"
+animals[1] = "elephant"
+animals.pop()
+
+console.log(animals)
 
 
 /*
@@ -175,8 +200,23 @@ Ex: indexOfArray(nums,1) => 2
 Ex: indexOfArray(nums,4) => 9
 
 **try more cases by your self
-*/
 
+answer is : 
+*/
+var nums = [45,50,36,58,78,52]
+function indexOfArray(arrname , indx) {
+       
+     let r = arrname[indx]
+
+     return r
+
+
+}
+
+ for (i = 0; i < nums.length; i++ ) {
+
+   document.write(indexOfArray(nums, i) + "<br>") 
+ }
 
 /*
 11
@@ -188,7 +228,22 @@ var nums= [1,2,3,8,9]
 Ex: arrayExceptLast(nums) =>  [1,2,3,8]
 
 **try more cases by your self
+
+answer is :
 */
+
+var ree = [45,50,36,58,78,52]
+function arrayExceptLast(ael) {
+       
+
+      
+      ael.pop()
+
+      document.write(ael)
+
+
+}
+arrayExceptLast(ree)
 
 
 /*
@@ -201,7 +256,21 @@ var nums= [1,2,3,8,9]
 Ex: addToEnd(nums,55) =>  [1,2,3,8,55]
 
 **try more cases by your self
+
+answer is :
 */
+var yry = [5,8,9,6]
+
+function addToEnd(ate, end) {
+     
+      ate.push(end) 
+     
+   document.write(ate)
+
+}
+addToEnd(yry,900) 
+
+
 
 
 // all the exercises below should solved 2 times: 1- for loop 2- while lopp
