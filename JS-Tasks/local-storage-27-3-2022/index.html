@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .div-form{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+            
+        }
+        
+        fieldset{
+            width: 750px;
+        }
+        #submit{
+            font-size: 25px;
+            
+            padding: 15px;
+        }
+        #submit:hover{
+            background-color: green;
+            color: white;
+        }
+        #caard{
+            background-color: antiquewhite;
+            width: 500px;
+            height: 500px ;
+            border-radius: 10%;
+            padding: 35px;
+            margin-top: 20px;
+        }
+        #pcaard{
+            display: flex;
+            justify-content: center;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="div-form">
+
+    <form action="">
+        <fieldset>
+      <label for="input-name"> name : </label>
+      <input type="text" name="name" id="input-name" value="">
+      
+      <br> <br>
+
+      <label for="input-age">age : </label>
+      <input type="number" name="age" id="input-age"> <br> <br>
+
+      <label for="input-major">major and university : </label>
+      <input type="text" name="major" id="input-major"> <br> <br>
+
+      <label for="input-bod">Date Of Birth : </label>   
+      <input type="date" id="input-bod"> <br> <br>
+       
+       <h4>Your Prefer Language : </h4>
+      
+      <input type="checkbox" name="prelang" id="Html" onclick="impo()"> 
+      <label for="Html" id="label-html" >HTML</label>
+      <span id="span"></span>
+      <br> <br>
+
+      
+      <input type="checkbox" name="prelang" id="Css"> 
+      <label for="Css" id="label-css">CSS</label>
+      <br> <br>
+
+      
+      <input type="checkbox" name="prelang" id="Js">
+      <label for="Js" id="label-js">JavaScript</label>
+       <br> <br>
+
+        <h4>Gender : </h4> 
+      <input type="radio" name="Gender" value="male" id="input-male">
+       <label for="input-male">Male</label>
+
+       <input type="radio" name="Gender" value="Female" id="input-female"> 
+       <label for="input-female"> Female</label> <br> <br>
+
+       <label for="input-desc">Breif Description about you : </label> <br>
+
+       <textarea name="Breif" id="input-desc" cols="40" rows="10">
+
+       </textarea> <br> <br>
+       
+       <label for="img">Select Your Image : </label> <br>
+       <input type="file" id="img">
+
+       <button id="submit" onclick="submitt()">Submit</button>
+       
+    </fieldset>
+    </form>
+    </div>
+
+
+    
+       
+
+
+    
+<div id="pcaard">
+
+    <div id="caard">
+     
+       <!-- <span>Your name is : </span> -->
+        <h4 id="headd">  </h4>
+
+        
+        <h4 id="headd2">  </h4>
+
+        <h4 id="headd3">  </h4>
+       
+        <h4 id="headd4">  </h4>
+
+        <h4 id="headd5">  </h4>
+
+        <h4 id="headd6">  </h4>
+        <h4 id="headd7">  </h4>
+        <h4 id="headd8">  </h4>
+        <h4 id="headd9">  </h4>
+        <h4 id="headd10">  </h4>
+        <h4 id="headd11">  </h4>
+
+
+    </div>
+</div>
+
+    
+   
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

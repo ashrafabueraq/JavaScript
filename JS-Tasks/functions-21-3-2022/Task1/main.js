@@ -285,7 +285,43 @@ Ex: sumArray(nums) => 23
 
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
-*/
+
+answer is : 
+*/ // for .....
+function sumArray(sor) {
+
+     let sumarry = 0;
+   
+       for (i=0; i < sor.length; i++){
+         
+           sumarry += sor[i]
+   
+       }
+       document.write(sumarry)
+   
+   }
+   let sor1 = [5,8,6,1,9]
+   sumArray(sor1) 
+
+   // While...... 
+   function sumArray(sorr) {
+
+     let sumarry = 0;
+     let i = 0;
+   
+       while (i < sorr.length){ 
+         
+           sumarry += sorr[i]
+   
+           i++
+   
+       }
+       document.write(sumarry)
+   
+   }
+   let sor2 = [5,8,6,1,9]
+   sumArray(sor2) 
+   
 
 
 /*
@@ -299,7 +335,24 @@ Ex: minInArray(nums) => 1
 
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
+
+answer is :
 */
+
+function minInArray(minA){
+     let minN;
+     for(i=0 ; i<minA.length; i++){
+         if (minA[0] < minA[i] && minA[i] > minA[i + 1]){ 
+             minN= minA[0]
+         }else if (minA[0] > minA[i]){ 
+             minN= minA[i]
+         }
+     }return minN
+ }
+ document.write(`${minInArray([20,30,122,50])} <br>`)
+
+
+
 
 
 /*
