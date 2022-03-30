@@ -46,7 +46,7 @@ function submitt() {
 
 
 
-
+document.getElementById('input-name').value="ashraf"
 
 
 
